@@ -208,7 +208,7 @@ function initOAuth(opts) {
   additionalQueryStringParams = (o.additionalQueryStringParams||{});
 
   if(errors.length > 0){
-    log('auth unable initialize oauth: ' + errors);
+    console && console.log('auth unable initialize oauth: ' + errors);
     return;
   }
 
