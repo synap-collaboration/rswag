@@ -48,10 +48,10 @@
         onComplete: function(swaggerApi, swaggerUi){
           if(typeof initOAuth == "function") {
             initOAuth({
-              clientId: "your-client-id",
-              clientSecret: "your-client-secret-if-required",
-              realm: "your-realms",
-              appName: "your-app-name",
+              clientId: '<%= @oauth2.client_id %>',
+              clientSecret: '<%= @oauth2.client_secret %>',
+              realm: '<%= @oauth2.realm %>',
+              appName: '<%= @oauth2.application_name %>',
               scopeSeparator: " ",
               additionalQueryStringParams: {}
             });
